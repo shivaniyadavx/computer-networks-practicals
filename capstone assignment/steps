@@ -1,1 +1,11 @@
+## Steps Performed
 
+1. Added PC1, PC2, and one switch to create a direct network.
+2. Connected both PCs to the switch using straight-through cables.
+3. Assigned IP addresses to both PCs in the same subnet.
+4. Switched to Simulation Mode.
+5. Sent a ping from PC1 to PC2 and observed the ICMP Echo Request and Echo Reply.
+6. Added another switch between PC1 and PC2 to create an extra hop.
+7. Repeated the ping from PC1 to PC2.
+8. Observed the additional forwarding step in the packet path.
+9. Compared the delay and packet movement in both setups.
