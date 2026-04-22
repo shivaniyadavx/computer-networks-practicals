@@ -1,0 +1,48 @@
+# ACK-Based Communication Using ICMP (Packet Tracer)
+
+## Objective
+
+To study ICMP Echo Request/Reply behavior and analyze the effect of extra network hops.
+
+## Topology
+
+Task 1: PC1 → Switch → PC2
+Task 2: PC1 → Switch1 → Switch2 → PC2
+
+## IP Configuration
+
+PC1: 192.168.1.1
+PC2: 192.168.1.2
+Subnet Mask: 255.255.255.0
+
+## Steps
+
+1. Connected PC1 and PC2 using one switch
+2. Assigned IP addresses
+3. Tested connectivity using ping
+4. Observed packet flow in simulation mode
+5. Added one more switch between PC1 and PC2
+6. Repeated ping and observed changes
+
+## Observation
+
+Direct setup has fewer steps and very low delay.
+Extra hop setup has more forwarding steps and slightly higher delay.
+
+## Result
+
+Ping was successful in both cases. Extra hop increased delay slightly.
+
+## Conclusion
+
+More hops increase packet travel time due to additional forwarding.
+
+## Files
+
+exp5_ack_observation.pkt
+output_exp5.txt
+report_exp5.pdf
+
+## Author
+
+shivani yadav
