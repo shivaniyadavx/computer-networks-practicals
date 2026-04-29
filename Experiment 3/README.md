@@ -1,60 +1,54 @@
-# Experiment 3: Packet Switching vs Circuit Switching
+# Assignment 3: Network Performance Analysis
 
 ## Aim
 
-To create a network simulation to demonstrate packet switching and circuit switching and compare their performance and efficiency.
+To analyze packet delay, packet loss, and throughput in a network.
 
 ## Objective
 
-To understand the difference between packet switching and circuit switching by simulating data transmission in both methods.
+To understand how network performance is affected by routing and traffic conditions.
 
 ## Theory
 
-Packet switching is a method of data transmission in which data is broken into small packets and each packet can take different paths to reach the destination. It is efficient and flexible.
+* Packet Delay: Time taken for data to travel from source to destination
+* Packet Loss: Loss of packets during transmission
+* Throughput: Amount of data successfully transmitted
 
-Circuit switching is a method in which a dedicated communication path is established between sender and receiver before transmission begins. All data follows the same path.
+Routing algorithms affect these parameters.
 
 ## Network Topology
 
-### Packet Switching
-
-
-### Circuit Switching
-![Circuit Topology](screenshots/circuit_topology.png)
+![Topology](screenshots/topology.png)
 
 ## Procedure
 
 1. Open Cisco Packet Tracer
-2. Create a network with multiple routers and PCs
-3. Design two paths between source and destination for packet switching
-4. Send data using simulation mode and observe packet flow
-5. Modify the network to create a single fixed path for circuit switching
-6. Send data again and observe behavior
+2. Create network with routers and PCs
+3. Assign IP addresses
+4. Configure routing (static/dynamic)
+5. Send packets using simulation
+6. Observe delay and packet movement
 
 ## Configuration Commands
 
-Basic IP configuration was done on PCs and routers.
-No advanced routing protocols were used.
+Basic router configuration:
+
+enable
+configure terminal
+interface fa0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
 
 ## Observations / Results
 
-### Packet Switching
+* Delay observed in packet transmission
+* No packet loss under normal conditions
+* Throughput improved with proper routing
 
-* Packets followed different possible paths
-* Dynamic routing observed
-* Better fault tolerance
-
-![Packet Flow](screenshots/packet_flow.png)
-
-### Circuit Switching
-
-* Data followed a single fixed path
-* No alternate route available
-* Less flexible compared to packet switching
-
-
+![Result](screenshots/simulation.png)
 
 ## Conclusion
 
-The experiment successfully demonstrated both packet switching and circuit switching. Packet switching proved to be more efficient and flexible as it allows multiple paths and better utilization of network resources, whereas circuit switching follows a fixed path and is less efficient.
+Network performance depends on routing and traffic. Efficient routing improves throughput and reduces delay.
+
 
